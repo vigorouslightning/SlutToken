@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Pump Coin</title>
+    <title>SLUT Token - Simple Lightweight Usable Token</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:title" content="Simple Lightweight Usable Token">
     <meta property="og:url" content="http://www.sluttoken.com/">
@@ -13,6 +13,14 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Princess+Sofia|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/9bb1c7f4b6/UntitledProject/style.css">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107703749-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-107703749-1');
+    </script>
 </head>
 
 <body>
@@ -89,46 +97,6 @@
                     </p>
                 </div>
             </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-lg-4">
-                    <p class="h1">Full functioning wallet</p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <p>
-                        I learned all about Ethereum smart contracts and Solidity over a weekend so I could launch this
-                        ICO. Most of the smart contract contract code is copied from GitHub and Stack Overflow posts,
-                        so it should be pretty much right… right?
-                    </p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <p>
-                        Also, I definitely <em>didn't</em> have any smart contract experts look at the contract before
-                        I launched it. I mean, why bother? All the other ICOs go through weeks of auditing and they
-                        still end up with bugs and vulnerabilities in their contracts.
-                    </p>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-lg-4">
-                    <p class="h1">Fully integrated SLUT website</p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <p>
-                        Unlike with every other token sale on the market, I can guarantee here and now that the value
-                        of UET will not (in fact, can not) reduce during or after the ICO. Since these tokens aren't
-                        worth anything to start with, there's nowhere to go but up!
-                    </p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <p>
-                        But remember—this is a <em>completely honest</em> ICO, which means I don't want anyone to
-                        mistakenly <em>expect</em> the value of the tokens to go up, either. They're called Useless
-                        Ethereum Tokens for a reason.
-                    </p>
-                </div>
-            </div>
             <!--<h1 style="text-align: center; margin-top: 2em;">Roadmap</h1>
             <div class="row">
                 <div class="col-md-6">
@@ -183,6 +151,224 @@
             </div>
         </div>
     </section>
+    <section class="newsletter text-center home-header ng-scope" id="newsletter">
+  <div class="container">
+    <div class="row">
+      <div ng-show="showNewsletterForm==1">
+        <!-- SignIn -->
+        <div class="col-md-10 col-md-offset-1 text-center" ng-show="show==1">
+          <h1>CoinPennant</h1>
+          <p translate=""><span class="ng-scope">Be part of our program by Sign up &amp; Invite Friends. You can earn CPT Tokens.</span></p>
+          <span class="small-program-desc" translate=""><span class="ng-scope">When a friend signs up using your unique link, you get 50 CPT Tokens + 5% of the CPT Tokens they buy,</span><br class="ng-scope"><span class="ng-scope">and they get an extra 15% bonus when they buy CPT Tokens.</span></span>
+          <div class="row">
+            <div class="col-md-12 down">
+              <div class="row">
+                <div class="col-md-12 col-xs-6">
+                  <form class="form-inline ng-pristine ng-valid-email ng-invalid ng-invalid-required ng-valid-maxlength ng-valid-minlength ng-valid-pattern" name="signInForm" ng-submit="signIn(signInForm.$valid)" novalidate="">
+                    <div ng-hide="message == ''" class="newsletter-errors">
+                      <span ng-bind-html="message | webSiteTrustAsHtml" class="ng-binding"></span>
+                    </div>
+                    <div class="newsletter-errors">
+                      <span ng-show="signInForm.email.$invalid &amp;&amp; !signInForm.email.$pristine" translate="" class="ng-hide"><span class="ng-scope">Enter a valid email.</span></span>
+                      <span ng-show="signInForm.email.$error.maxlength" translate="" class="ng-hide"><span class="ng-scope">The Email can be max 200 characters long.</span></span>
+                      <span ng-show="signInForm.password.$error.minlength" translate="" class="ng-hide"><span class="ng-scope">The Password must be at least 6 characters long.</span></span>
+                      <span ng-show="signInForm.password.$error.maxlength" translate="" class="ng-hide"><span class="ng-scope">The Password can be max 20 characters long.</span></span>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" name="email" class="textbox ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required ng-valid-maxlength" placeholder="Valid Email" maxlength="200" ng-model="signInData.email" required="">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" name="password" class="textbox ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength" placeholder="Password" maxlength="200" ng-model="signInData.password" ng-minlength="6" ng-maxlength="20" required="">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" id="validationCode" value="" ng-model="signInData.validationCode" class="hide ng-pristine ng-untouched ng-valid ng-valid-pattern">
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" name="button" class="button" style="border-top-right-radius: 6px; background: #2774b7;
+                                   border-bottom-right-radius: 6px;" ng-disabled="signInForm.$invalid" translate="" disabled="disabled"><span class="ng-scope">Sign In</span></button>
+                    </div>
+                  </form>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-xs-6 text-center down2">
+                    <span class="program-links"><span translate=""><span class="ng-scope">New user?</span></span> <a href="" ng-click="show = 2; message = ''" translate=""><span class="ng-scope">Sign Up first</span></a>
+                    <br><span translate=""><span class="ng-scope">Forgot your password?</span></span> <a href="" ng-click="show = 3; message = ''" translate=""><span class="ng-scope">Click here</span></a></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-xs-6 text-center">
+                    <div class="iconss text-center hidden-xs hidden-sm">
+                      <a href="http://fb.me/CoinPennantProject" target="_blank"><i id="ico1" class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="https://twitter.com/coinpennantdev" target="_blank"><i id="ico2" class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="mailto:info@coinpennant.com" target="_blank"><i id="ico3" class="fa fa-envelope" aria-hidden="true"></i></a>
+                      <a href="https://coinpennant.herokuapp.com" target="_blank"><i id="ico4" class="fa fa-slack" aria-hidden="true"></i></a>
+                      <a href="https://youtu.be/XH-IwF8RVOU" target="_blank"><i id="ico5" class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End SignIn -->
+        <!-- SignUp -->
+        <div class="col-md-10 col-md-offset-1 text-center ng-hide" ng-show="show==2">
+          <h1>CoinPennant</h1>
+          <p translate=""><span class="ng-scope">Be part of our program by Sign up &amp; Invite Friends. You can earn CPT Tokens.</span></p>
+          <span class="small-program-desc" translate=""><span class="ng-scope">When a friend signs up using your unique link, you get 50 CPT Tokens + 5% of the CPT Tokens they buy,</span><br class="ng-scope"><span class="ng-scope">and they get an extra 15% bonus when they buy CPT Tokens.</span></span>
+          <p style="padding-top: 15px;" translate=""><span class="ng-scope">Get 50 CPT when you sign up &amp; verify your email.</span></p>
+          <div class="row">
+            <div class="col-md-12 down">
+              <div class="row">
+                <div class="col-md-12 col-xs-6">
+                  <form class="form-inline ng-pristine ng-valid-email ng-invalid ng-invalid-required ng-valid-maxlength ng-valid-minlength ng-invalid-recaptcha" name="signUpForm" ng-submit="signUp(signUpForm.$valid)" novalidate="">
+                    <div ng-hide="message == ''" ng-class="(savedSuccessfully) ? 'newsletter-success' : 'newsletter-errors'" class="newsletter-errors">
+                      <span ng-bind-html="message | webSiteTrustAsHtml" class="ng-binding"></span>
+                    </div>
+                    <div class="newsletter-errors">
+                      <span ng-show="signUpForm.email.$invalid &amp;&amp; !signUpForm.email.$pristine" translate="" class="ng-hide"><span class="ng-scope">Enter a valid email.</span></span>
+                      <span ng-show="signUpForm.email.$error.maxlength" translate="" class="ng-hide"><span class="ng-scope">The Email can be max 200 characters long.</span></span>
+                      <span ng-show="signUpForm.password.$error.minlength" translate="" class="ng-hide"><span class="ng-scope">The Password must be at least 6 characters long.</span></span>
+                      <span ng-show="signUpForm.password.$error.maxlength" translate="" class="ng-hide"><span class="ng-scope">The Password can be max 20 characters long.</span></span>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" name="email" class="textbox ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required ng-valid-maxlength" placeholder="Valid Email" maxlength="200" ng-model="signUpData.email" required="">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" name="password" class="textbox ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength" placeholder="Password" maxlength="200" ng-model="signUpData.password" ng-minlength="6" ng-maxlength="20" required="">
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" name="button" class="button" style="border-top-right-radius: 6px; background: #2774b7;
+                                   border-bottom-right-radius: 6px;" ng-disabled="signUpForm.$invalid" translate="" disabled="disabled"><span class="ng-scope">Sign Up</span></button>
+                    </div>
+                    <div class="subscribe-checkbox col-md-12 text-center">
+                      <input type="checkbox" checked="checked" name="isSubscribed" ng-true-value="true" ng-false-value="false" ng-model="signUpData.isSubscribed" ng-init="isSubscribed=true" ng-checked="true" translate="" class="ng-pristine ng-untouched ng-valid"> Subscribe to newsletter
+                    </div>
+                    <div>
+                      <div class="captcha-wrapper" style="display: block;">
+                        <p class="captcha-header" translate=""><span class="ng-scope">Solve the CAPTCHA to complete registration.</span></p>
+                        <div>
+                          <span id="reCaptcha" class="captcha">
+                            <div style="width: 304px; height: 78px; display: block;">
+                              <div vc-recaptcha="" key="'6LcgijMUAAAAAF-BjuI1PO5zFMN_5s3ytNpe2Fyx'" on-create="setWidgetId(widgetId)" on-success="setResponse(response)" on-expire="cbExpiration()" class="ng-isolate-scope"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LcgijMUAAAAAF-BjuI1PO5zFMN_5s3ytNpe2Fyx&amp;co=aHR0cHM6Ly9jb2lucGVubmFudC5jb206NDQz&amp;hl=en&amp;v=r20171003155951&amp;size=normal&amp;cb=fmv8vav6l9rz" title="recaptcha widget" width="304" height="78" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-xs-6 text-center down2">
+                    <span class="program-links"><span translate=""><span class="ng-scope">Already have an account?</span></span> <a href="" ng-click="show = 1; message = ''" translate=""><span class="ng-scope">Sign In here</span></a>
+                    <br><span translate=""><span class="ng-scope">Forgot your password?</span></span> <a href="" ng-click="show = 3; message = ''" translate=""><span class="ng-scope">Click here</span></a></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-xs-6 text-center">
+                    <div class="iconss text-center hidden-xs hidden-sm">
+                      <a href="http://fb.me/CoinPennantProject" target="_blank"><i id="ico1" class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="https://twitter.com/coinpennantdev" target="_blank"><i id="ico2" class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="mailto:info@coinpennant.com" target="_blank"><i id="ico3" class="fa fa-envelope" aria-hidden="true"></i></a>
+                      <a href="https://coinpennant.herokuapp.com" target="_blank"><i id="ico4" class="fa fa-slack" aria-hidden="true"></i></a>
+                      <a href="https://youtu.be/XH-IwF8RVOU" target="_blank"><i id="ico5" class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End SignUp -->
+        <!-- Forget password -->
+        <div class="col-md-10 col-md-offset-1 text-center ng-hide" ng-show="show==3">
+          <h1>CoinPennant</h1>
+          <p translate=""><span class="ng-scope">Be part of our program by Sign up &amp; Invite Friends. You can earn CPT Tokens.</span></p>
+          <span class="small-program-desc" translate=""><span class="ng-scope">When you fill in your registered email address,</span><br class="ng-scope"><span class="ng-scope">you will be sent instructions on how to reset your password.</span></span>
+          <div class="row">
+            <div class="col-md-12 down">
+              <div class="row">
+                <div class="col-md-12 col-xs-6">
+                  <form class="form-inline ng-pristine ng-valid-email ng-invalid ng-invalid-required ng-valid-maxlength ng-valid-pattern" name="forgetPasswordForm" ng-submit="forgetPassword(forgetPasswordForm.$valid)" novalidate="">
+                    <div ng-hide="message == ''" ng-class="(forgetPasswordEmailSendSuccessfully) ? 'newsletter-success' : 'newsletter-errors'" class="newsletter-errors">
+                      <span ng-bind-html="message | webSiteTrustAsHtml" class="ng-binding"></span>
+                    </div>
+                    <div class="newsletter-errors">
+                      <span ng-show="forgetPasswordForm.email.$invalid &amp;&amp; !forgetPasswordForm.email.$pristine" translate="" class="ng-hide"><span class="ng-scope">Enter a valid email.</span></span>
+                      <span ng-show="forgetPasswordForm.email.$error.maxlength" translate="" class="ng-hide"><span class="ng-scope">The Email can be max 200 characters long.</span></span>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" name="email" class="textbox ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required ng-valid-maxlength" placeholder="Valid Email" maxlength="200" ng-model="forgetPasswordData.email" required="">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" id="validationCode" value="" ng-model="forgetPasswordData.validationCode" class="hide ng-pristine ng-untouched ng-valid ng-valid-pattern">
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" name="button" class="button" style="border-top-right-radius: 6px; background: #2774b7;
+                                   border-bottom-right-radius: 6px;" ng-disabled="forgetPasswordForm.$invalid" translate="" disabled="disabled"><span class="ng-scope">Reset Password</span></button>
+                    </div>
+                  </form>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-xs-6 text-center down2">
+                    <span class="program-links"><span translate=""><span class="ng-scope">Already have an account?</span></span> <a href="" ng-click="show = 1; message = ''" translate=""><span class="ng-scope">Sign In here</span></a>
+                    <br><span translate=""><span class="ng-scope">New user?</span></span> <a href="" ng-click="show = 2; message = ''" translate=""><span class="ng-scope">Sign Up first</span></a></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-xs-6 text-center">
+                    <div class="iconss text-center hidden-xs hidden-sm">
+                      <a href="http://fb.me/CoinPennantProject" target="_blank"><i id="ico1" class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="https://twitter.com/coinpennantdev" target="_blank"><i id="ico2" class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="mailto:info@coinpennant.com" target="_blank"><i id="ico3" class="fa fa-envelope" aria-hidden="true"></i></a>
+                      <a href="https://coinpennant.herokuapp.com" target="_blank"><i id="ico4" class="fa fa-slack" aria-hidden="true"></i></a>
+                      <a href="https://youtu.be/XH-IwF8RVOU" target="_blank"><i id="ico5" class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Forget password -->
+      </div>
+      <!-- UserInfo -->
+      <div ng-show="showUserInfo==1" class="ng-hide">
+        <div class="col-md-12 text-center">
+          <h1>CoinPennant</h1>
+          <p translate=""><span class="ng-scope">Copy the link and send it to all your friends who you want to invite. Now you can earn CPT Tokens.</span></p>
+          <div class="ref-link ng-binding">
+            https://coinpennant.com/?ref=
+          </div>
+          <div class="iconss text-center">
+            <i id="ico1" class="fa fa-facebook" aria-hidden="true"></i>
+            <a href="https://twitter.com/intent/tweet?text=Just signed up for CPT, the Buddha Token. Sign up %26 earn 50 CPT tokens. @bdtofficial %23bitcoin&amp;url=https://coinpennant.com/?ref=" target="_blank"><i id="icou2" class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="balance-info2">
+          <div class="row">
+            <div class="col-xs-6 col-sm br">
+              <p class="info-label" translate=""><span class="ng-scope">Friends Joined</span></p>
+              <p class="info-value ng-binding"></p>
+            </div>
+            <div class="col-xs-6 col-sm">
+              <p class="info-label" translate=""><span class="ng-scope">Your Balance (CPT)</span></p>
+              <p class="info-value ng-binding"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End UserInfo -->
+      <subscription-counter class="ng-isolate-scope"><div class="ico-stats text-center" ng-show="subscriptionNumber != ''">
+  <div class="col-md-12 text-center subscribed-number">
+    <span><strong class="ng-binding">4405</strong> <span translate=""><span class="ng-scope">people have signed up for CPT.</span></span></span>
+  </div>
+</div>
+</subscription-counter>
+      <p ng-show="showUserInfo==1" class="user-info2 text-center ng-binding ng-hide"><span translate=""><span class="ng-scope">Signed in as</span></span> <strong class="ng-binding"></strong> (). <a id="sign-out" href="" ng-click="signOut()" translate=""><span class="ng-scope">Sign Out</span></a></p>
+    </div>
+  </div>
+</section>
     <section>
         <div class="container">
             <div class="row">
