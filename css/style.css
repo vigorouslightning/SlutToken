@@ -6202,6 +6202,10 @@ a.text-dark:focus, a.text-dark:hover {
 body {
   font-family: 'Roboto Slab', serif; }
 
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: .4rem;
+  padding-left: .4rem; }
+
 h2 {
   font-family: 'Roboto Slab', serif;
   font-size: .9em;
@@ -6212,10 +6216,10 @@ h2 {
   text-align: center;
   font-size: 4em;
   margin-top: 20px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   color: white; }
   .big-text span {
-    vertical-align: middle; }
+    font-family: 'Open Sans Condensed'; }
 
 .navbar {
   border-bottom: 2px solid black; }
